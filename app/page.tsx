@@ -13,8 +13,8 @@ export default function Home() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <div className="max-w-[1500px] mx-auto flex flex-col flex-1 w-full">
           <Header />
-          <main className="flex-1 flex items-center lg:items-start px-4 sm:px-8 lg:px-12 pt-8 sm:pt-10 lg:pt-0 pb-12 sm:pb-16">
-            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:items-center w-full">
+          <main className="flex-1 flex items-center lg:items-start px-4 sm:px-8 lg:px-12 pt8 sm:pt-h10 lg:pt-0 pb-12 sm:pb-16">
+            <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 items-center w-full">
               <LeftColumn />
               <RightColumn />
             </div>
