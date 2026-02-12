@@ -2,9 +2,34 @@ import Header from "@/components/Header";
 import LeftColumn from "@/components/LeftColumn";
 import RightColumn from "@/components/RightColumn";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zeenomtech.com";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  name: "Frontend Development From Scratch",
+  description:
+    "Learn HTML, CSS, JavaScript & React through practical, beginner-friendly training. Build an in-demand tech skill for 2026.",
+  provider: {
+    "@type": "Organization",
+    name: "Zeenomtech",
+    url: siteUrl,
+  },
+  teaches: ["HTML", "CSS", "JavaScript", "React"],
+  hasCourseInstance: {
+    "@type": "CourseInstance",
+    courseMode: "online",
+  },
+  url: siteUrl,
+};
 
 export default function Home() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="min-h-dvh bg-white px-4 sm:px-6 relative flex flex-col">
       <div
         className="fixed inset-0 z-0 pointer-events-none bg-no-repeat bg-cover bg-center opacity-[0.4]"
@@ -22,5 +47,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   )
 }
