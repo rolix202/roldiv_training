@@ -2,7 +2,8 @@ import Header from "@/components/Header";
 import LeftColumn from "@/components/LeftColumn";
 import RightColumn from "@/components/RightColumn";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zeenomtech.com";
+const raw = process.env.NEXT_PUBLIC_SITE_URL || "https://learn.zeenomtech.com";
+const siteUrl = raw.startsWith("http") ? raw : `https://${raw.trim()}`;
 
 const jsonLd = {
   "@context": "https://schema.org",
