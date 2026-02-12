@@ -25,7 +25,7 @@ const LeftColumn = () => {
             <p className="text-gray-700 font-bold text-base sm:text-xl lg:text-[25px] mb-8 sm:mb-10 leading-relaxed">
                 Learn HTML, CSS, JavaScript & React through
                 <br className="hidden sm:block" />
-                practical, beginner-friendly training.
+                {" "}practical, beginner-friendly training.
             </p>
             <div className="flex flex-wrap gap-6 sm:gap-12 lg:gap-16 mb-10 sm:mb-12">
                 {techIcon.map(({ path, text }) => (

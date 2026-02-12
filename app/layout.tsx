@@ -12,7 +12,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://learn.zeenomtech.com";
+const rawUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://learn.zeenomtech.com";
+const siteUrl = rawUrl.startsWith("http://") || rawUrl.startsWith("https://") ? rawUrl : `https://${rawUrl.trim()}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
