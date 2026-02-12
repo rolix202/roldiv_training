@@ -5,7 +5,7 @@ import RightColumn from "@/components/RightColumn";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white py-4 sm:py-6 lg:py-8 px-4 sm:px-6 relative">
+    <div className="min-h-screen bg-white  px-4 sm:px-6 relative">
       <div
         className="fixed inset-0 z-0 pointer-events-none bg-no-repeat bg-cover bg-center opacity-[0.4]"
         style={{ backgroundImage: "url(/gridlines.svg)" }}
