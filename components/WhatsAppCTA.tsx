@@ -16,10 +16,10 @@ export default function WhatsAppCTA() {
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
-      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1E40AF] hover:bg-[#1E3A8A] active:bg-[#1E3A8A] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-colors shadow-lg cursor-pointer touch-manipulation"
+      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1E40AF] hover:bg-[#1E3A8A] active:bg-[#1E3A8A] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-colors shadow-lg cursor-pointer touch-manipulation animate-pulse"
     >
       <Image src="/whatsapp.svg" width={25} height={25} alt="WhatsApp" aria-hidden />
-      Join the FREE WhatsApp Group
+      JOIN THE CLASS NOW!!!
     </a>
   );
 }
