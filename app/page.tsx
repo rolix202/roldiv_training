@@ -31,7 +31,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <div className="min-h-dvh lg:h-dvh bg-white px-4 sm:px-6 relative flex flex-col lg:overflow-hidden">
+    <div className="min-h-dvh bg-white px-4 sm:px-6 relative flex flex-col">
       <div
         className="fixed inset-0 z-0 pointer-events-none bg-no-repeat bg-cover bg-center opacity-[0.4]"
         style={{ backgroundImage: "url(/gridlines.svg)" }}
